@@ -9,6 +9,6 @@ public class ShowcaseBook extends Book {
 
     @Override
     public void buy(int quantity, String email, String address) {
-        throw new RuntimeException("This book not fo sale\n--------------------------------------------------------------") ;
+        throw new RuntimeException("This book not for sale\n--------------------------------------------------------------") ;
     }
 }
