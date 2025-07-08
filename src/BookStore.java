@@ -13,6 +13,8 @@ public class BookStore {
 
         inventory.addBook(new ShowcaseBook("book5","C#" , 2024 ,0));
         inventory.addBook(new ShowcaseBook("book6","SQL" , 2018 ,0));
+        System.out.println("--------------------------------------------------------------");
+
 
         try{
             inventory.buy("book2",11,"tarekfarg01@gmail.com","Cairo");
