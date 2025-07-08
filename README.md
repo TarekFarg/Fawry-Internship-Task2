@@ -1,5 +1,5 @@
 
-# 📚 Book Store
+## 📚 Book Store
 
 Welcome to the **Book Store** — a simple Java-based system for managing and selling different types of books:  
 🧾 Paper Books, 📩 EBooks, and 📕 Showcase books.
