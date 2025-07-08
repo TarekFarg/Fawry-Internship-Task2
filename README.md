@@ -45,7 +45,7 @@ Fawry-Internship-Task2/
 │ │ ├── MailService.java 
 │ │ └── ShippingService.java
 │ │
-│ ├── BookStore.java 
+│ ├── BookStore.java # Test Class
 │ └── Inventory.java 
 │
 ├── .gitignore

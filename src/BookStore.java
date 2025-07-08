@@ -2,6 +2,8 @@ import book.EBook;
 import book.PaperBook;
 import book.ShowcaseBook;
 
+// TEST CLASS
+
 public class BookStore {
     public static void main(String[] args) {
         Inventory inventory = new Inventory() ;
