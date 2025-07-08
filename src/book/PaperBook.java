@@ -15,11 +15,11 @@ public class PaperBook extends Book{
     public void buy(int quantity, String email, String address) {
         if(quantity > stock)
         {
-            // do something
-            return;
+            throw new RuntimeException("Not enough stock\n--------------------------------------------------------------") ;
         }
         ShippingService.ShipTo(address);
         System.out.println("Paid amount: " + quantity*price);
+        System.out.println("--------------------------------------------------------------");
         stock -= quantity ;
     }
 

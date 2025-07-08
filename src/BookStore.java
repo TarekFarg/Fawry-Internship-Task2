@@ -14,10 +14,28 @@ public class BookStore {
         inventory.addBook(new ShowcaseBook("book5","C#" , 2024 ,0));
         inventory.addBook(new ShowcaseBook("book6","SQL" , 2018 ,0));
 
-        inventory.buy("book2",5,"tarekfarg01@gmail.com","Cairo");
-        inventory.buy("book4" ,1,"tarekfarg01@gmail.com","Cairo");
-        inventory.buy("book6" ,1,"tarekfarg01@gmail.com","Cairo");
+        try{
+            inventory.buy("book2",11,"tarekfarg01@gmail.com","Cairo");
+        }catch (RuntimeException e)
+        {
+            System.out.println(e.getMessage());
+        }
 
-        inventory.removeOutdated(4,2025);
+        try{
+            inventory.buy("book4" ,1,"tarekfarg01@gmail.com","Cairo");
+        }catch (RuntimeException e)
+        {
+            System.out.println(e.getMessage());
+        }
+
+        try{
+            inventory.buy("book6" ,1,"tarekfarg01@gmail.com","Cairo");
+        }catch (RuntimeException e)
+        {
+            System.out.println(e.getMessage());
+        }
+
+
+        inventory.removeOutdated(3,2025);
     }
 }

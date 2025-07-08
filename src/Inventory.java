@@ -16,6 +16,7 @@ public class Inventory {
     {
         inventory.put(book.getISBN(),book) ;
         System.out.println("Add "+ book.getTitle() + " to the store");
+        System.out.println("--------------------------------------------------------------");
     }
     public void removeOutdated(int numOfYears , int currentYear ){
         List<String> toRemove = new ArrayList<>() ;
@@ -31,6 +32,7 @@ public class Inventory {
         for(String ISBN : toRemove)
         {
             System.out.println("Remove " + inventory.get(ISBN).getTitle());
+            System.out.println("--------------------------------------------------------------");
             inventory.remove(ISBN) ;
         }
     }
@@ -39,8 +41,7 @@ public class Inventory {
     {
         if(!inventory.containsKey(ISBN))
         {
-            // do something
-            return;
+            throw new RuntimeException("This book not found\n--------------------------------------------------------------") ;
         }
         inventory.get(ISBN).buy(quantity,email,address);
     }

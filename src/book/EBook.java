@@ -15,5 +15,6 @@ public class EBook extends Book{
     public void buy(int quantity, String email, String address) {
         MailService.sendTo(email);
         System.out.println("Paid amount: " + price);
+        System.out.println("--------------------------------------------------------------");
     }
 }
